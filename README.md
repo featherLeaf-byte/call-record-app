@@ -1,40 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Overview
+
+This project is a Next.js web application that fetches data from a local JSON server. It allows for searching, sorting, and exporting data. The application is built with Next.js and Bootstrap 5.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow the steps below:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. Clone the repository to your local machine.
+2. Navigate to the project root folder.
+3. Run the following command to install all dependencies:
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Use the following bash commands to run the JSON server:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm run server
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+#or
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+yarn server
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. Use the following bash commands to run the development server:
 
-## Learn More
+```
+npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+#or
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+6. Once the development server is running, open [http://localhost:3000](http://localhost:3000) with your browser to run the web application.
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The main source code of the application is contained in `./pages/index.js`. Page modifications can be done in this file.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## JSON Server
+
+The JSON data is contained in the `db.json` file, which is hosted on the JSON server. The server can be started with the following command:
+
+```
+npm run server
+```
+
+## Conclusion
+
+This concludes the documentation for your Next.js project with Boostrap and Json-server. If you have any questions or concerns, please feel free to reach out to me.
